@@ -1,0 +1,10 @@
+Quizibo Outline:
+
+Quiz types:
+Picture input
+Pop culture List input
+Educational list input
+Random list input
+Math input
+Trivia input
+history input
