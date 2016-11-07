@@ -1,8 +1,17 @@
+{{#if quizzingNow}}
 
-{{question-format results currentQuestion}} <!--  is this passing a number or a question?  -->
-{{log currentQuestion}}
-{{log results.currentQuestion.incorrect_answers}}
-{{#each results.currentQuestion.incorrect_answers as |test|}}
-  <li>{{test}}</li>
-{{/each}}
-<button class="btn btn-primary" {{action 'nextQuestion'}}> Next Question</button>
+{{currentQuestion}}
+<ul>
+  <li>{{radio-button value='0' checked=selectedAnswer}}{{answerOne}}</li>
+  <li>{{radio-button value='1' checked=selectedAnswer}}{{answerTwo}}</li>
+  <li>{{radio-button value='2' checked=selectedAnswer}}{{answerThree}}</li>
+  <li>{{radio-button value='3' checked=selectedAnswer}}{{answerFour}}</li>
+</ul>
+
+{{else}}
+<button class="btn btn-primary" {{action 'startQuiz' results}}>Start Quiz</button>
+{{/if}}
+
+<button class="btn btn-primary" {{action 'nextQuestion' results}}> Next Question</button>
+<button {{action 'doSomethingElse'}}>test</button>
+<button {{action 'checkAnswer'}}>Check answer</button>
