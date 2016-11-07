@@ -1,0 +1,204 @@
+{ "art": [{
+    "artist": "Roy Lichtenstein",
+    "image": "https://en.wikipedia.org/wiki/Roy_Lichtenstein#/media/File:Roy_Lichtenstein_Drowning_Girl.jpg"
+  }, {
+    "artist": "Andy Warhol",
+    "image": "http://guyhepner.com/wp-content/uploads/2015/06/Classic-Marilyn-set--400x400.png"
+  }, {
+    "artist": "Pablo Picasso",
+    "image": "http://artprojectsforkids.org/wp-content/uploads/2012/09/Picasso-Mural-768x1024.jpg"
+  }, {
+    "artist": "Vincent Van Gogh",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1280px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
+  }, {
+    "artist": "Salvador Dali",
+    "image": "http://img05.deviantart.net/4ba0/i/2013/343/1/a/salvador_dali___persistence_of_memory_by_lutique-d6xapdv.jpg"
+  }, {
+    "artist": "Mark Rothko",
+    "image": "https://en.wikipedia.org/wiki/Color_Field#/media/File:No_61_Mark_Rothko.jpg"
+  }, {
+    "artist": "Henri Matisse",
+    "image": "https://upload.wikimedia.org/wikipedia/en/archive/2/2e/20100414210212!La_danse_(I)_by_Matisse.jpg"
+  }, {
+    "artist": "Johan Vermeer",
+    "image": "http://petapixel.com/assets/uploads/2012/12/earring.jpg"
+  }, {
+    "artist": "Jackson Pollock",
+    "image": "http://www.thedripartist.com/wp-content/uploads/2010/07/drip-painting-bigbang1.jpg"
+  }, {
+    "artist": "Edvard Munch",
+    "image": "http://i.dailymail.co.uk/i/pix/2012/05/03/article-2138678-12E016DA000005DC-756_634x845.jpg"
+  }, {
+    "artist": "Piet Mondrian",
+    "image": "http://assets1.bigthink.com/system/idea_thumbnails/45543/primary/Mondrian%20grid.jpg?1343912136"
+  }],
+
+"movie": [{
+    "title": "Heat",
+    "image": "https://c1.staticflickr.com/9/8362/8310562880_bc94737146_z.jpg"
+  }, {
+    "title": "Taxi Driver",
+    "image": "http://images.mentalfloss.com/sites/default/files/styles/insert_main_wide_image/public/jodiefoster.jpg"
+  }, {
+    "title": "Casino",
+    "image": "https://bamfstyle.files.wordpress.com/2013/06/2013-01-28-01-21-33-am.jpg"
+  }, {
+    "title": "Goodfellas",
+    "image": "https://i.ytimg.com/vi/IzVFexZQurE/maxresdefault.jpghttps://i.ytimg.com/vi/IzVFexZQurE/maxresdefault.jpg"
+  }, {
+    "title": "Analyze That",
+    "image": "http://regencylady.tripod.com/pictures/analyzethat/analyzethattop.jpg"
+  }, {
+    "title": "Ronin",
+    "image": "http://www.hotflick.net/flicks/1998_Ronin/998RON_Robert_De_Niro_044.jpg"
+  }, {
+    "title": "Midnight Run",
+    "image": "https://shoutfactory-productionsite.s3.amazonaws.com/system/asset/file/696b04da37a4c106487ade44b49c1445/product_detail_3162030205001_4644830850001_midnightrun.jpg"
+  }, {
+    "title": "Untouchables",
+    "image": "http://cdn32.sptndigital.com/sites/uk.moviemix/files/robert_de_niro_the_untouchables_1600_900.jpg"
+  }, {
+    "title": "The Good Shepherd",
+    "image": "http://content.internetvideoarchive.com/content/photos/980/395153_010.jpg"
+  }, {
+    "title": "Rocky and Bullwinkle",
+    "image": "http://content.internetvideoarchive.com/content/photos/9936/885610_017.jpg"
+  }, {
+    "title": "Jackie Brown",
+    "image": "http://static3.businessinsider.com/image/577fd2664321f1d8208b6603-480/robert-de-niro-in-jackie-brown.jpg"
+  }],
+
+"president": [{
+    "name": "George Washington",
+    "term": "1789-1797"
+  }, {
+    "name": "John Adams",
+    "term": "1797-1801"
+  }, {
+    "name": "Thomas Jefferson",
+    "term": "1801-1809"
+  }, {
+    "name": "James Madison",
+    "term": "1809-1817"
+  }, {
+    "name": "James Monroe",
+    "term": "1817-1825"
+  }, {
+    "name": "John Quincy Adams",
+    "term": "1825-1829"
+  }, {
+    "name": "Andrew Jackson",
+    "term": "1829-1837"
+  }, {
+    "name": "Martin Van Buren",
+    "term": "1837-1841"
+  }, {
+    "name": "William Henry Harrison",
+    "term": "1841"
+  }, {
+    "name": "John Tyler",
+    "term": "1841-1845"
+  }, {
+    "name": "James Polk",
+    "term": "1845-1849"
+  }, {
+    "name": "Zachary Tayler",
+    "term": "1849-1850"
+  }, {
+    "name": "Millard Fillmore",
+    "term": "1850-1853"
+  },{
+    "name": "Franklin Pierce",
+    "term": "1853-1857"
+  },{
+    "name": "James Buchanan",
+    "term": "1857-1861"
+  },{
+    "name": "Abraham Lincoln",
+    "term": "1861-1865"
+  },{
+    "name": "Andrew Johnson",
+    "term": "1865-1869"
+  },{
+    "name": "Ulysses S Grant",
+    "term": "1869-1877"
+  },{
+    "name": "Rutherford B Hayes",
+    "term": "1877-1881"
+  },{
+    "name": "James A. Garfield",
+    "term": "1881-1881"
+  },{
+    "name": "Chester A. Arthur",
+    "term": "1881-1885"
+  },{
+    "name": "Grover Cleveland",
+    "term": "1885-1889"
+  },{
+    "name": "Benjamin Harrison",
+    "term": "1889-1893"
+  },{
+    "name": "Grover Cleveland",
+    "term": "1893-1897"
+  },{
+    "name": "William McKinley",
+    "term": "1897-1901"
+  },{
+    "name": "Theodore Roosevelt",
+    "term": "1901-1909"
+  },{
+    "name": "William Howard Taft",
+    "term": "1909-1913"
+  },{
+    "name": "Woodrow Wilson",
+    "term": "1913-1921"
+  },{
+    "name": "Warren G. Harding",
+    "term": "1921-1923"
+  },{
+    "name": "Calvin Coolidge",
+    "term": "1923-1929"
+  },{
+    "name": "Herbert Hoover",
+    "term": "1929-1933"
+  },{
+    "name": "Franklin D. Roosevelt",
+    "term": "1933-1945"
+  },{
+    "name": "Harry S. Truman",
+    "term": "1945-1953"
+  },{
+    "name": "Dwight D. Eisenhower",
+    "term": "1953-1961"
+  },{
+    "name": "John F. Kennedy",
+    "term": "1961-1963"
+  },{
+    "name": "Lyndon B. Johnson",
+    "term": "1963-1969"
+  },{
+    "name": "Richard Nixon",
+    "term": "1969-1974"
+  },{
+    "name": "Gerald Ford",
+    "term": "1974-1977"
+  },{
+    "name": "Jimmy Carter",
+    "term": "1977-1981"
+  },{
+    "name": "Ronald Reagan",
+    "term": "1981-1989"
+  },{
+    "name": "George H. W. Bush",
+    "term": "1989-1993"
+  },{
+    "name": "Bill Clinton",
+    "term": "1993-2001"
+  },{
+    "name": "George W. Bush",
+    "term": "2001-2009"
+  },{
+    "name": "Barack Obama",
+    "term": "2009-2017"
+  }]
+}
