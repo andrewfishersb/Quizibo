@@ -1,0 +1,8 @@
+
+{{question-format results currentQuestion}} <!--  is this passing a number or a question?  -->
+{{log currentQuestion}}
+{{log results.currentQuestion.incorrect_answers}}
+{{#each results.currentQuestion.incorrect_answers as |test|}}
+  <li>{{test}}</li>
+{{/each}}
+<button class="btn btn-primary" {{action 'nextQuestion'}}> Next Question</button>
