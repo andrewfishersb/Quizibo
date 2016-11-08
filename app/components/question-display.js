@@ -16,11 +16,8 @@ export default Ember.Component.extend({
   counter: 0,
   correctCounter: 0,
 
-
   actions:{
     nextQuestion(results){
-
-
       if(this.counter===9){
         this.set('quizzingNow', false);
         this.set('quizDone',true);
@@ -29,7 +26,6 @@ export default Ember.Component.extend({
           this.correctCounter++;
           this.set('score.totalScore', this.correctCounter);
         }
-
       }else{
         this.counter++;
         this.set('currentQuestion', results[this.counter].question);
@@ -38,7 +34,6 @@ export default Ember.Component.extend({
           this.correctCounter++;
           this.set('score.totalScore', this.correctCounter);
         }
-
         this.set('correctAnswer', results[this.counter].correct_answer);
         this.set('allAnswers', results[this.counter].incorrect_answers);
         var random = Math.floor(Math.random() * (3 + 1));
@@ -49,8 +44,6 @@ export default Ember.Component.extend({
         this.set('answerFour', this.allAnswers[3]);
         this.set('selectedAnswer', null);
       }
-
-
     },
     startQuiz(results){
       this.set('currentQuestion', results[this.counter].question);
@@ -67,7 +60,6 @@ export default Ember.Component.extend({
       this.set('selectedAnswer', null);
     },
     transitionToNew(){
-
       this.sendAction('transitionToNew');
     }
   }

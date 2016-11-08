@@ -14,6 +14,13 @@
   <button class="btn btn-primary" {{action 'nextQuestion' results}}> Next Question</button>
 {{/if}}
 {{#if quizDone}}
+<h1>Answer Key</h1>
+  {{#each results as |result|}}
+    <li>{{result.question}}</li>
+    <ul>
+      <li>{{result.correct_answer}}</li>
+    </ul>
+  {{/each}}
   <button class="btn btn-primary" {{action 'transitionToNew'}}> New Route</button>
 {{/if}}
 
