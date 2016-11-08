@@ -16,8 +16,9 @@ export default Ember.Component.extend({
       var answer = this.get('answer');
       this.set('answer', "");
       answer = answer.toLowerCase();
-      console.log(answer);
-      if (answer === results.content[this.counter]._data.title) {
+      var answer2 = results.content[this.counter]._data.title;
+      answer2 = answer2.toLowerCase();
+      if (answer === answer2) {
         this.correctCounter++;
         this.set('score.totalScore', this.correctCounter);
       }
