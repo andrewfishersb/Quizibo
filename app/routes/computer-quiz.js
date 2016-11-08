@@ -13,7 +13,6 @@ export default Ember.Route.extend({
     transitionToNew(){
       var newRoute = this.get('transition').remove();
       this.transitionTo(newRoute);
-      console.log(this.get('transition').categories)
     }
   }
 });
