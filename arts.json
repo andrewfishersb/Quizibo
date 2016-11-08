@@ -1,35 +1,35 @@
 { "arts": [{
-    "artist": "Roy Lichtenstein",
-    "image": "https://en.wikipedia.org/wiki/Roy_Lichtenstein#/media/File:Roy_Lichtenstein_Drowning_Girl.jpg"
+    "artist": "lichtenstein",
+    "image": "https://upload.wikimedia.org/wikipedia/en/d/df/Roy_Lichtenstein_Drowning_Girl.jpg"
   }, {
-    "artist": "Andy Warhol",
+    "artist": "warhol",
     "image": "http://guyhepner.com/wp-content/uploads/2015/06/Classic-Marilyn-set--400x400.png"
   }, {
-    "artist": "Pablo Picasso",
+    "artist": "picasso",
     "image": "http://artprojectsforkids.org/wp-content/uploads/2012/09/Picasso-Mural-768x1024.jpg"
   }, {
-    "artist": "Vincent Van Gogh",
+    "artist": "van gogh",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1280px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
   }, {
-    "artist": "Salvador Dali",
+    "artist": "dali",
     "image": "http://img05.deviantart.net/4ba0/i/2013/343/1/a/salvador_dali___persistence_of_memory_by_lutique-d6xapdv.jpg"
   }, {
-    "artist": "Mark Rothko",
-    "image": "https://en.wikipedia.org/wiki/Color_Field#/media/File:No_61_Mark_Rothko.jpg"
+    "artist": "rothko",
+    "image": "https://upload.wikimedia.org/wikipedia/en/5/5f/No_61_Mark_Rothko.jpg"
   }, {
-    "artist": "Henri Matisse",
+    "artist": "matisse",
     "image": "https://upload.wikimedia.org/wikipedia/en/archive/2/2e/20100414210212!La_danse_(I)_by_Matisse.jpg"
   }, {
-    "artist": "Johan Vermeer",
+    "artist": "vermeer",
     "image": "http://petapixel.com/assets/uploads/2012/12/earring.jpg"
   }, {
-    "artist": "Jackson Pollock",
+    "artist": "pollock",
     "image": "http://www.thedripartist.com/wp-content/uploads/2010/07/drip-painting-bigbang1.jpg"
   }, {
-    "artist": "Edvard Munch",
+    "artist": "munch",
     "image": "http://i.dailymail.co.uk/i/pix/2012/05/03/article-2138678-12E016DA000005DC-756_634x845.jpg"
   }, {
-    "artist": "Piet Mondrian",
+    "artist": "mondrian",
     "image": "http://assets1.bigthink.com/system/idea_thumbnails/45543/primary/Mondrian%20grid.jpg?1343912136"
   }],
 
