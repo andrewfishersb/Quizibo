@@ -26,7 +26,7 @@ export default Ember.Component.extend({
       this.counter++;
       this.set('currentQuestion', results.content[this.counter]._data.image);
     } else {
-        this.set('areResultsShowing', true)
+        this.set('areResultsShowing', true);
       }
     }
   }

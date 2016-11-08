@@ -1,28 +1,33 @@
 {{#if quizzingNow}}
 <div class="container">
   <div class="row">
-    <div class="col-xs-6 col-xs-3-offset">
-      <img class="img-responsive" src={{currentQuestion}} alt="" />
+    <div class="col-xs-6">
+      <img class="img-responsive" src={{currentQuestion}}/>
+      <br>
       <label for="answer">Name the movie:</label>
       {{input class="form-control" value=answer id="answer"}}
+      <button class="btn btn-primary" {{action 'nextQuestion' results}}>Submit Answer</button>
+    </div>
+    <div class="col-xs-5 score">
+      <h2>Score</h2>
+      <h2>{{score.totalScore}}</h2>
     </div>
   </div>
 </div>
-<button class="btn btn-primary" {{action 'nextQuestion' results}}>Submit Answer</button>
+
 {{else}}
 <button class="btn btn-primary" {{action 'startQuiz' results}}>Start Movie Quiz</button>
 {{/if}}
 
-{{score.totalScore}}
-
-
 {{#if areResultsShowing}}
-<div class="container">
   <h1>Answer Key</h1>
-  {{#each results as |movies|}}
-    <div class="row">
-      {{movies.title}}<img class="thumbnail" src={{movies.image}}/>
-    </div>
-  {{/each}}
-</div>
+    <div class="container">
+      <div class="row">
+        {{#each results as |movies|}}
+          <div class="col-xs-3">
+            {{movies.title}}<img class="thumbnail" src={{movies.image}}/>
+          </div>
+        {{/each}}
+      </div>
+  </div>
 {{/if}}

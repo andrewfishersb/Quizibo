@@ -1,9 +1,13 @@
-.noBullet{
+.noBullet {
   list-style-type: none;
   margin-right: 35px;
 }
 
-.thumbnail{
+.thumbnail {
   max-height: 100px;
   max-width: auto;
+}
+
+.score {
+  text-align: right;
 }
