@@ -1,5 +1,15 @@
-{{#each results as |result|}}
-  <ul>
-    <li>{{result.artist}}</li>
-  </ul>
-{{/each}}
+{{#if quizzingNow}}
+<div class="container">
+  <div class="row">
+    <div class="col-xs-6 col-xs-3-offset">
+      <img class="img-responsive" src={{currentQuestion}} alt="" />
+      <label for="answer">Name the painter by last name:</label>
+      {{input class="form-control" value=answer id="answer"}}
+    </div>
+  </div>
+</div>
+<button class="btn btn-primary" {{action 'nextQuestion' results}}>Submit Answer</button>
+{{else}}
+<button class="btn btn-primary" {{action 'startQuiz' results}}>Start Art Quiz</button>
+{{/if}}
+{{score.totalScore}}
