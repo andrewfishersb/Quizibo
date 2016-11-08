@@ -34,8 +34,8 @@
   }],
 
 "movies": [{
-    "title": "Heat",
-    "image": "https://c1.staticflickr.com/9/8362/8310562880_bc94737146_z.jpg"
+    "title": "Goodfellas",
+    "image": "https://s-media-cache-ak0.pinimg.com/originals/83/b0/45/83b045d560dafd76a78f88f3653cdc2c.jpg"
   }, {
     "title": "Taxi Driver",
     "image": "http://images.mentalfloss.com/sites/default/files/styles/insert_main_wide_image/public/jodiefoster.jpg"
@@ -43,8 +43,8 @@
     "title": "Casino",
     "image": "https://bamfstyle.files.wordpress.com/2013/06/2013-01-28-01-21-33-am.jpg"
   }, {
-    "title": "Goodfellas",
-    "image": "https://s-media-cache-ak0.pinimg.com/originals/83/b0/45/83b045d560dafd76a78f88f3653cdc2c.jpg"
+    "title": "Heat",
+    "image": "https://c1.staticflickr.com/9/8362/8310562880_bc94737146_z.jpg"
   }, {
     "title": "Analyze That",
     "image": "http://regencylady.tripod.com/pictures/analyzethat/analyzethattop.jpg"

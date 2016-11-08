@@ -17,8 +17,12 @@
 
 
 {{#if areResultsShowing}}
+<div class="container">
   <h1>Answer Key</h1>
   {{#each results as |movies|}}
-    <li><span class="thumbnail">img="{{movies.image}}"</span> {{movies.title}}</li>
+    <div class="row">
+      {{movies.title}}<img class="thumbnail" src={{movies.image}}/>
+    </div>
   {{/each}}
+</div>
 {{/if}}
