@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  score: Ember.inject.service(),
   currentQuestion: null,
   quizzingNow: false,
   selectedAnswer: null,
@@ -11,6 +12,8 @@ export default Ember.Component.extend({
   correctAnswer: null,
   allAnswers: [],
   counter: 0,
+  correctCounter: 0,
+  roundScore:0,
 
   actions:{
     nextQuestion(results){
@@ -18,12 +21,16 @@ export default Ember.Component.extend({
       this.set('currentQuestion', results[this.counter].question);
       var answerSpot = parseInt(this.selectedAnswer);
       if (this.allAnswers[answerSpot] === this.correctAnswer) {
+        this.correctCounter++;
+        this.set('score.totalScore', this.correctCounter);
+        this.set('roundScore', this.correctCounter);
+
+
       }
       this.set('correctAnswer', results[this.counter].correct_answer);
       this.set('allAnswers', results[this.counter].incorrect_answers);
       var random = Math.floor(Math.random() * (3 + 1));
       this.allAnswers.splice(random, 0, this.correctAnswer);
-      console.log(this.allAnswers[0]);
       this.set('answerOne', this.allAnswers[0]);
       this.set('answerTwo', this.allAnswers[1]);
       this.set('answerThree', this.allAnswers[2]);
@@ -38,7 +45,6 @@ export default Ember.Component.extend({
       this.set('allAnswers', results[0].incorrect_answers);
       var random = Math.floor(Math.random() * (3 + 1));
       this.allAnswers.splice(random, 0, this.correctAnswer);
-      console.log(this.allAnswers[0]);
       this.set('answerOne', this.allAnswers[0]);
       this.set('answerTwo', this.allAnswers[1]);
       this.set('answerThree', this.allAnswers[2]);
