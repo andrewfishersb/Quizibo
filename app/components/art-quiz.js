@@ -6,6 +6,7 @@ export default Ember.Component.extend({
   currentQuestion: null,
   counter: 0,
   correctCounter: 0,
+  areResultsShowing: false,
   actions:{
     startQuiz(results){
       this.set('quizzingNow', true);
@@ -20,8 +21,12 @@ export default Ember.Component.extend({
         this.correctCounter++;
         this.set('score.totalScore', this.correctCounter);
       }
+      if(this.counter<10) {
       this.counter++;
       this.set('currentQuestion', results.content[this.counter]._data.image);
+    } else {
+        this.set('areResultsShowing', true)
+      }
     }
   }
 });

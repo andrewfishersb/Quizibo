@@ -12,4 +12,13 @@
 {{else}}
 <button class="btn btn-primary" {{action 'startQuiz' results}}>Start Art Quiz</button>
 {{/if}}
+
 {{score.totalScore}}
+
+
+{{#if areResultsShowing}}
+  <h1>Answer Key</h1>
+  {{#each results as |arts|}}
+    <li>{{arts.artist}}</li>
+  {{/each}}
+{{/if}}
