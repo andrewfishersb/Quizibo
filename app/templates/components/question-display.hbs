@@ -1,11 +1,11 @@
 {{#if quizzingNow}}
 
-{{currentQuestion}}
+{{{currentQuestion}}}
 <ul>
-  <li>{{radio-button value='0' checked=selectedAnswer}}{{answerOne}}</li>
-  <li>{{radio-button value='1' checked=selectedAnswer}}{{answerTwo}}</li>
-  <li>{{radio-button value='2' checked=selectedAnswer}}{{answerThree}}</li>
-  <li>{{radio-button value='3' checked=selectedAnswer}}{{answerFour}}</li>
+  <li class="noBullet">{{radio-button value='0' checked=selectedAnswer}}{{{answerOne}}}</li>
+  <li class="noBullet">{{radio-button value='1' checked=selectedAnswer}}{{{answerTwo}}}</li>
+  <li class="noBullet">{{radio-button value='2' checked=selectedAnswer}}{{{answerThree}}}</li>
+  <li class="noBullet">{{radio-button value='3' checked=selectedAnswer}}{{{answerFour}}}</li>
 </ul>
 
 {{else}}
