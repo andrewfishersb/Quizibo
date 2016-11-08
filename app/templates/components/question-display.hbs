@@ -1,8 +1,9 @@
 {{#if startingQuiz}}
+
 <button class="btn btn-primary" {{action 'startQuiz' results}}>Start Quiz</button>
 {{/if}}
 {{#if quizzingNow}}
-
+  <div id="timer"></div>
   {{{currentQuestion}}}
   <ul>
     <li class="noBullet">{{radio-button value='0' checked=selectedAnswer}}{{{answerOne}}}</li>

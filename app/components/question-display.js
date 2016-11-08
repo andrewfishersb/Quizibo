@@ -15,6 +15,7 @@ export default Ember.Component.extend({
   allAnswers: [],
   counter: 0,
   correctCounter: 0,
+  currentTime: 120,
 
   actions:{
     nextQuestion(results){
@@ -46,6 +47,27 @@ export default Ember.Component.extend({
       }
     },
     startQuiz(results){
+      var timer = 5;
+      var timerHere;
+      console.log(timer);
+      var stepTime = function(){
+        if (timer === 0){
+          clearInterval(timerHere);
+          alert('you lose');
+        } else {
+          timer--;
+          $("#timer").text(timer + " seconds");
+        }
+      }
+      var startTime = function(timer){
+        timerHere = setInterval(stepTime, 1000);
+      }
+
+
+
+
+
+      startTime(timer)
       this.set('currentQuestion', results[this.counter].question);
       this.set('startingQuiz', false);
       this.set('quizzingNow', true);

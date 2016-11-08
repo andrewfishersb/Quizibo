@@ -44,6 +44,8 @@
     "loader.js": "^4.0.10"
   },
   "dependencies": {
+    "ember-cli-moment-shim": "2.2.1",
+    "ember-moment": "6.1.0",
     "ember-radio-buttons": "^4.0.1"
   }
 }
