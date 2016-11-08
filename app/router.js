@@ -8,6 +8,10 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('computer-quiz');
+  this.route('comicresults', {path: '/comicresults/:name'});
+  this.route('art');
+  this.route('movie');
+  this.route('president');
 });
 
 export default Router;
