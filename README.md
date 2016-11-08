@@ -19,6 +19,7 @@ You will need the following things properly installed on your computer.
 * `cd quizibo`
 * `npm install`
 * `bower install`
+* `Download Allow-Control-Allow-Origin chrome extension`
 
 ## Running / Development
 

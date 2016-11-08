@@ -2,9 +2,11 @@ import Ember from 'ember';
 
 
 export default Ember.Route.extend({
+  transition: Ember.inject.service(),
   actions: {
-  charLookup(params) {
-      this.transitionTo('comicresults', params.name);
+    initialTransition(){
+      var newRoute = this.get('transition').remove();
+      this.transitionTo(newRoute);
     }
   }
 });
