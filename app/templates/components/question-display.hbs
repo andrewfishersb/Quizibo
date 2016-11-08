@@ -1,21 +1,20 @@
-{{#if quizzingNow}}
-
-{{{currentQuestion}}}
-<ul>
-  <li class="noBullet">{{radio-button value='0' checked=selectedAnswer}}{{{answerOne}}}</li>
-  <li class="noBullet">{{radio-button value='1' checked=selectedAnswer}}{{{answerTwo}}}</li>
-  <li class="noBullet">{{radio-button value='2' checked=selectedAnswer}}{{{answerThree}}}</li>
-  <li class="noBullet">{{radio-button value='3' checked=selectedAnswer}}{{{answerFour}}}</li>
-</ul>
-
-{{else}}
+{{#if startingQuiz}}
 <button class="btn btn-primary" {{action 'startQuiz' results}}>Start Quiz</button>
 {{/if}}
+{{#if quizzingNow}}
 
-<button class="btn btn-primary" {{action 'nextQuestion' results}}> Next Question</button>
-<button {{action 'doSomethingElse'}}>test</button>
-<button {{action 'checkAnswer'}}>Check answer</button>
+  {{{currentQuestion}}}
+  <ul>
+    <li class="noBullet">{{radio-button value='0' checked=selectedAnswer}}{{{answerOne}}}</li>
+    <li class="noBullet">{{radio-button value='1' checked=selectedAnswer}}{{{answerTwo}}}</li>
+    <li class="noBullet">{{radio-button value='2' checked=selectedAnswer}}{{{answerThree}}}</li>
+    <li class="noBullet">{{radio-button value='3' checked=selectedAnswer}}{{{answerFour}}}</li>
+  </ul>
+
+  <button class="btn btn-primary" {{action 'nextQuestion' results}}> Next Question</button>
+{{/if}}
+{{#if quizDone}}
+  <button class="btn btn-primary" {{action 'transitionToNew'}}> New Route</button>
+{{/if}}
+
 {{display-score score.totalScore}}
-<p>
-  round: {{roundScore}}
-</p>
