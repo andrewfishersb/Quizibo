@@ -2,3 +2,8 @@
   list-style-type: none;
   margin-right: 35px;
 }
+
+.thumbnail{
+  max-height: 100px;
+  max-width: auto;
+}

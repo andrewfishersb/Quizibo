@@ -19,6 +19,6 @@
 {{#if areResultsShowing}}
   <h1>Answer Key</h1>
   {{#each results as |arts|}}
-    <li>{{arts.artist}}</li>
+    <li><span class="thumbnail">{{arts.image}}</span>{{arts.artist}}</li>
   {{/each}}
 {{/if}}

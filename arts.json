@@ -1,35 +1,35 @@
 { "arts": [{
-    "artist": "lichtenstein",
+    "artist": "Lichtenstein",
     "image": "https://upload.wikimedia.org/wikipedia/en/d/df/Roy_Lichtenstein_Drowning_Girl.jpg"
   }, {
-    "artist": "warhol",
+    "artist": "Warhol",
     "image": "http://guyhepner.com/wp-content/uploads/2015/06/Classic-Marilyn-set--400x400.png"
   }, {
-    "artist": "picasso",
+    "artist": "Picasso",
     "image": "http://artprojectsforkids.org/wp-content/uploads/2012/09/Picasso-Mural-768x1024.jpg"
   }, {
-    "artist": "van gogh",
+    "artist": "Van Gogh",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1280px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
   }, {
-    "artist": "dali",
+    "artist": "Dali",
     "image": "http://img05.deviantart.net/4ba0/i/2013/343/1/a/salvador_dali___persistence_of_memory_by_lutique-d6xapdv.jpg"
   }, {
-    "artist": "rothko",
+    "artist": "Rothko",
     "image": "https://upload.wikimedia.org/wikipedia/en/5/5f/No_61_Mark_Rothko.jpg"
   }, {
-    "artist": "matisse",
+    "artist": "Matisse",
     "image": "https://upload.wikimedia.org/wikipedia/en/archive/2/2e/20100414210212!La_danse_(I)_by_Matisse.jpg"
   }, {
-    "artist": "vermeer",
+    "artist": "Vermeer",
     "image": "http://petapixel.com/assets/uploads/2012/12/earring.jpg"
   }, {
-    "artist": "pollock",
+    "artist": "Pollock",
     "image": "http://www.thedripartist.com/wp-content/uploads/2010/07/drip-painting-bigbang1.jpg"
   }, {
-    "artist": "munch",
+    "artist": "Munch",
     "image": "http://i.dailymail.co.uk/i/pix/2012/05/03/article-2138678-12E016DA000005DC-756_634x845.jpg"
   }, {
-    "artist": "mondrian",
+    "artist": "Mondrian",
     "image": "http://assets1.bigthink.com/system/idea_thumbnails/45543/primary/Mondrian%20grid.jpg?1343912136"
   }],
 
@@ -44,7 +44,7 @@
     "image": "https://bamfstyle.files.wordpress.com/2013/06/2013-01-28-01-21-33-am.jpg"
   }, {
     "title": "Goodfellas",
-    "image": "https://i.ytimg.com/vi/IzVFexZQurE/maxresdefault.jpghttps://i.ytimg.com/vi/IzVFexZQurE/maxresdefault.jpg"
+    "image": "https://s-media-cache-ak0.pinimg.com/originals/83/b0/45/83b045d560dafd76a78f88f3653cdc2c.jpg"
   }, {
     "title": "Analyze That",
     "image": "http://regencylady.tripod.com/pictures/analyzethat/analyzethattop.jpg"
@@ -58,7 +58,7 @@
     "title": "Untouchables",
     "image": "http://cdn32.sptndigital.com/sites/uk.moviemix/files/robert_de_niro_the_untouchables_1600_900.jpg"
   }, {
-    "title": "The Good Shepherd",
+    "title": "Good Shepherd",
     "image": "http://content.internetvideoarchive.com/content/photos/980/395153_010.jpg"
   }, {
     "title": "Rocky and Bullwinkle",
