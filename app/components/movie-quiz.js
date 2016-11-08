@@ -6,7 +6,7 @@ export default Ember.Component.extend({
   actions:{
     submitAnswer(providedAnswer) {
       if( movie.name = providedAnswer){
-        
+
       }
     }
   }

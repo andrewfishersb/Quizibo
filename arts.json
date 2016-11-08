@@ -1,4 +1,4 @@
-{ "art": [{
+{ "arts": [{
     "artist": "Roy Lichtenstein",
     "image": "https://en.wikipedia.org/wiki/Roy_Lichtenstein#/media/File:Roy_Lichtenstein_Drowning_Girl.jpg"
   }, {
@@ -33,7 +33,7 @@
     "image": "http://assets1.bigthink.com/system/idea_thumbnails/45543/primary/Mondrian%20grid.jpg?1343912136"
   }],
 
-"movie": [{
+"movies": [{
     "title": "Heat",
     "image": "https://c1.staticflickr.com/9/8362/8310562880_bc94737146_z.jpg"
   }, {
@@ -68,7 +68,7 @@
     "image": "http://static3.businessinsider.com/image/577fd2664321f1d8208b6603-480/robert-de-niro-in-jackie-brown.jpg"
   }],
 
-"president": [{
+"presidents": [{
     "name": "George Washington",
     "term": "1789-1797"
   }, {

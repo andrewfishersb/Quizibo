@@ -21,7 +21,7 @@ module.exports = function(environment) {
       apiKey: "AIzaSyBDPvtj-VNl9MO7DlWwzT9j75buL_8eF0Y",
       authDomain: "quizibo-488de.firebaseapp.com",
       databaseURL: "https://quizibo-488de.firebaseio.com",
-      storageBucket: "quizibo-488de.appspot.com",
+      storageBucket: "quizibo-488de.appspot.com"
     },
 
 
