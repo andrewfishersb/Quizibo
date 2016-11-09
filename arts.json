@@ -41,13 +41,13 @@
     "image": "http://images.mentalfloss.com/sites/default/files/styles/insert_main_wide_image/public/jodiefoster.jpg"
   }, {
     "title": "Casino",
-    "image": "https://bamfstyle.files.wordpress.com/2013/06/2013-01-28-01-21-33-am.jpg"
+    "image": "https://s-media-cache-ak0.pinimg.com/originals/53/16/42/531642b9577fa95ba0c8281b2a278567.jpg"
   }, {
     "title": "Heat",
     "image": "https://c1.staticflickr.com/9/8362/8310562880_bc94737146_z.jpg"
   }, {
     "title": "Analyze That",
-    "image": "http://regencylady.tripod.com/pictures/analyzethat/analyzethattop.jpg"
+    "image": "http://www.superiorpics.com/movie_pictures/mp/2002_Analyze_That/2002_analyze_that_008.jpg"
   }, {
     "title": "Ronin",
     "image": "http://www.hotflick.net/flicks/1998_Ronin/998RON_Robert_De_Niro_044.jpg"
@@ -58,147 +58,195 @@
     "title": "Untouchables",
     "image": "http://cdn32.sptndigital.com/sites/uk.moviemix/files/robert_de_niro_the_untouchables_1600_900.jpg"
   }, {
-    "title": "Good Shepherd",
-    "image": "http://content.internetvideoarchive.com/content/photos/980/395153_010.jpg"
+    "title": "Cop Land",
+    "image": "https://cdn.pastemagazine.com/www/system/images/photo_albums/robert-de-niro/large/45-niro-copland.jpg?1384968217"
   }, {
     "title": "Rocky and Bullwinkle",
-    "image": "http://content.internetvideoarchive.com/content/photos/9936/885610_017.jpg"
+    "image": "http://davidnicksay.com/wp-content/uploads/2015/04/2000-The-adventures-of-Rocky-and-Bullwinkle.jpg"
   }, {
     "title": "Jackie Brown",
-    "image": "http://static3.businessinsider.com/image/577fd2664321f1d8208b6603-480/robert-de-niro-in-jackie-brown.jpg"
+    "image": "http://cineplex.media.baselineresearch.com/images/79024/79024_large.jpg"
   }],
 
 "presidents": [{
     "name": "George Washington",
-    "term": "1789-1797"
+    "term": "1789-1797",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg"
   }, {
     "name": "John Adams",
-    "term": "1797-1801"
+    "term": "1797-1801",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Official_Presidential_portrait_of_John_Adams_%28by_John_Trumbull%2C_circa_1792%29.jpg/330px-Official_Presidential_portrait_of_John_Adams_%28by_John_Trumbull%2C_circa_1792%29.jpg"
   }, {
     "name": "Thomas Jefferson",
-    "term": "1801-1809"
+    "term": "1801-1809",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Thomas_Jefferson_by_Rembrandt_Peale%2C_1800.jpg/330px-Thomas_Jefferson_by_Rembrandt_Peale%2C_1800.jpg"
   }, {
     "name": "James Madison",
-    "term": "1809-1817"
+    "term": "1809-1817",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/James_Madison.jpg/330px-James_Madison.jpg"
   }, {
     "name": "James Monroe",
-    "term": "1817-1825"
+    "term": "1817-1825",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/James_Monroe_White_House_portrait_1819.gif/330px-James_Monroe_White_House_portrait_1819.gif"
   }, {
     "name": "John Quincy Adams",
-    "term": "1825-1829"
+    "term": "1825-1829",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/JQA_Photo.tif/lossy-page1-330px-JQA_Photo.tif.jpg"
   }, {
     "name": "Andrew Jackson",
-    "term": "1829-1837"
+    "term": "1829-1837",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Andrew_Jackson_Daguerrotype-crop.jpg/330px-Andrew_Jackson_Daguerrotype-crop.jpg"
   }, {
     "name": "Martin Van Buren",
-    "term": "1837-1841"
+    "term": "1837-1841",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Martin_Van_Buren_by_Mathew_Brady_c1855-58.jpg/330px-Martin_Van_Buren_by_Mathew_Brady_c1855-58.jpg"
   }, {
     "name": "William Henry Harrison",
-    "term": "1841"
+    "term": "1841-1841",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/William_Henry_Harrison_daguerreotype_edit.jpg/330px-William_Henry_Harrison_daguerreotype_edit.jpg"
   }, {
     "name": "John Tyler",
-    "term": "1841-1845"
+    "term": "1841-1845",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Tyler_Daguerreotype_%28restoration%29.jpg/330px-Tyler_Daguerreotype_%28restoration%29.jpg"
   }, {
     "name": "James Polk",
-    "term": "1845-1849"
+    "term": "1845-1849",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/JKP.tif/lossy-page1-330px-JKP.tif.jpg"
   }, {
     "name": "Zachary Tayler",
-    "term": "1849-1850"
+    "term": "1849-1850",
+    "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Zachary_Taylor_restored_and_cropped.png/330px-Zachary_Taylor_restored_and_cropped.png"
   }, {
     "name": "Millard Fillmore",
-    "term": "1850-1853"
+    "term": "1850-1853",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Millard_Fillmore-Edit1.jpg/330px-Millard_Fillmore-Edit1.jpg"
   },{
     "name": "Franklin Pierce",
-    "term": "1853-1857"
+    "term": "1853-1857",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Mathew_Brady_-_Franklin_Pierce_-_alternate_crop.jpg/330px-Mathew_Brady_-_Franklin_Pierce_-_alternate_crop.jpg"
   },{
     "name": "James Buchanan",
-    "term": "1857-1861"
+    "term": "1857-1861",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/James_Buchanan.jpg/329px-James_Buchanan.jpg"
   },{
     "name": "Abraham Lincoln",
-    "term": "1861-1865"
+    "term": "1861-1865",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Abraham_Lincoln_November_1863.jpg/330px-Abraham_Lincoln_November_1863.jpg"
   },{
     "name": "Andrew Johnson",
-    "term": "1865-1869"
+    "term": "1865-1869",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Andrew_Johnson_photo_portrait_head_and_shoulders%2C_c1870-1880-Edit1.jpg/330px-Andrew_Johnson_photo_portrait_head_and_shoulders%2C_c1870-1880-Edit1.jpg"
   },{
     "name": "Ulysses S Grant",
-    "term": "1869-1877"
+    "term": "1869-1877",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Ulysses_S._Grant_1870-1880.jpg/330px-Ulysses_S._Grant_1870-1880.jpg"
   },{
     "name": "Rutherford B Hayes",
-    "term": "1877-1881"
+    "term": "1877-1881",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/President_Rutherford_Hayes_1870_-_1880_Restored.jpg/330px-President_Rutherford_Hayes_1870_-_1880_Restored.jpg"
   },{
     "name": "James A. Garfield",
-    "term": "1881-1881"
+    "term": "1881-1881",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/James_Abram_Garfield%2C_photo_portrait_seated.jpg/330px-James_Abram_Garfield%2C_photo_portrait_seated.jpg"
   },{
     "name": "Chester A. Arthur",
-    "term": "1881-1885"
+    "term": "1881-1885",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Chester_Alan_Arthur.jpg/330px-Chester_Alan_Arthur.jpg"
   },{
     "name": "Grover Cleveland",
-    "term": "1885-1889"
+    "term": "1885-1889",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Grover_Cleveland_-_NARA_-_518139.jpg/330px-Grover_Cleveland_-_NARA_-_518139.jpg"
   },{
     "name": "Benjamin Harrison",
-    "term": "1889-1893"
+    "term": "1889-1893",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Benjamin_Harrison%2C_head_and_shoulders_bw_photo%2C_1896.jpg/330px-Benjamin_Harrison%2C_head_and_shoulders_bw_photo%2C_1896.jpg"
   },{
     "name": "Grover Cleveland",
-    "term": "1893-1897"
+    "term": "1893-1897",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Grover_Cleveland_-_NARA_-_518139.jpg/330px-Grover_Cleveland_-_NARA_-_518139.jpg"
   },{
     "name": "William McKinley",
-    "term": "1897-1901"
+    "term": "1897-1901",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/William_McKinley_by_Courtney_Art_Studio%2C_1896.jpg/330px-William_McKinley_by_Courtney_Art_Studio%2C_1896.jpg"
   },{
     "name": "Theodore Roosevelt",
-    "term": "1901-1909"
+    "term": "1901-1909",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/President_Roosevelt_-_Pach_Bros.tif/lossy-page1-330px-President_Roosevelt_-_Pach_Bros.tif.jpg"
   },{
     "name": "William Howard Taft",
-    "term": "1909-1913"
+    "term": "1909-1913",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/William_Howard_Taft%2C_head-and-shoulders_portrait%2C_facing_front.tif/lossy-page1-320px-William_Howard_Taft%2C_head-and-shoulders_portrait%2C_facing_front.tif.jpg"
   },{
     "name": "Woodrow Wilson",
-    "term": "1913-1921"
+    "term": "1913-1921",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/President_Wilson_1919.tif/lossy-page1-330px-President_Wilson_1919.tif.jpg"
   },{
     "name": "Warren G. Harding",
-    "term": "1921-1923"
+    "term": "1921-1923",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Warren_G_Harding-Harris_%26_Ewing.jpg/330px-Warren_G_Harding-Harris_%26_Ewing.jpg"
   },{
     "name": "Calvin Coolidge",
-    "term": "1923-1929"
+    "term": "1923-1929",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Calvin_Coolidge_cph.3g10777.jpg/330px-Calvin_Coolidge_cph.3g10777.jpg"
   },{
     "name": "Herbert Hoover",
-    "term": "1929-1933"
+    "term": "1929-1933",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/President_Hoover_portrait.tif/lossy-page1-330px-President_Hoover_portrait.tif.jpg"
   },{
     "name": "Franklin D. Roosevelt",
-    "term": "1933-1945"
+    "term": "1933-1945",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/FDR_1944_Color_Portrait.tif/lossy-page1-330px-FDR_1944_Color_Portrait.tif.jpg"
   },{
     "name": "Harry S. Truman",
-    "term": "1945-1953"
+    "term": "1945-1953",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Harry_S._Truman_-_NARA_-_530677.tif/lossy-page1-330px-Harry_S._Truman_-_NARA_-_530677.tif.jpg"
   },{
     "name": "Dwight D. Eisenhower",
-    "term": "1953-1961"
+    "term": "1953-1961",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/President_Eisenhower_Portrait_1959.tif/lossy-page1-330px-President_Eisenhower_Portrait_1959.tif.jpg"
   },{
     "name": "John F. Kennedy",
-    "term": "1961-1963"
+    "term": "1961-1963",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/John_F._Kennedy%2C_White_House_color_photo_portrait.jpg/330px-John_F._Kennedy%2C_White_House_color_photo_portrait.jpg"
   },{
     "name": "Lyndon B. Johnson",
-    "term": "1963-1969"
+    "term": "1963-1969",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Lyndon_B._Johnson_Oval_Office_Portrait.tif/lossy-page1-330px-Lyndon_B._Johnson_Oval_Office_Portrait.tif.jpg"
   },{
     "name": "Richard Nixon",
-    "term": "1969-1974"
+    "term": "1969-1974",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Richard_M._Nixon%2C_ca._1935_-_1982_-_NARA_-_530679.tif/lossy-page1-330px-Richard_M._Nixon%2C_ca._1935_-_1982_-_NARA_-_530679.tif.jpg"
   },{
     "name": "Gerald Ford",
-    "term": "1974-1977"
+    "term": "1974-1977",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Gerald_Ford_-_NARA_-_530680.tif/lossy-page1-330px-Gerald_Ford_-_NARA_-_530680.tif.jpg"
   },{
     "name": "Jimmy Carter",
-    "term": "1977-1981"
+    "term": "1977-1981",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/JimmyCarterPortrait2.jpg/330px-JimmyCarterPortrait2.jpg"
   },{
     "name": "Ronald Reagan",
-    "term": "1981-1989"
+    "term": "1981-1989",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Official_Portrait_of_President_Reagan_1981.jpg/329px-Official_Portrait_of_President_Reagan_1981.jpg"
   },{
     "name": "George H. W. Bush",
-    "term": "1989-1993"
+    "term": "1989-1993",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/George_H._W._Bush%2C_President_of_the_United_States%2C_1989_official_portrait.jpg/330px-George_H._W._Bush%2C_President_of_the_United_States%2C_1989_official_portrait.jpg"
   },{
     "name": "Bill Clinton",
-    "term": "1993-2001"
+    "term": "1993-2001",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Bill_Clinton.jpg/330px-Bill_Clinton.jpg"
   },{
     "name": "George W. Bush",
-    "term": "2001-2009"
+    "term": "2001-2009",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/George-W-Bush.jpeg/330px-George-W-Bush.jpeg"
   },{
     "name": "Barack Obama",
-    "term": "2009-2017"
+    "term": "2009-2017",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/President_Barack_Obama.jpg/330px-President_Barack_Obama.jpg"
+  },{
+    "name": "Donald Trump",
+    "term": "2017",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/President_Trump_2.jpg/330px-President_Trump_2.jpg"
   }]
 }

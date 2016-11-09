@@ -2,7 +2,7 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-6">
-      <img class="img-responsive" src={{currentQuestion}}/>
+      <img class="quizImage" src={{currentQuestion}}/>
       <br>
       <label for="answer"><h3>Name the painter by last name:</h3></label>
       {{input class="form-control" value=answer id="answer"}}
@@ -10,7 +10,7 @@
     </div>
     <div class="col-xs-5 score">
       <h2>Score</h2>
-      <h2>{{score.totalScore}}/11</h2>
+      <h2>{{score.totalScore}}</h2>
     </div>
   </div>
 </div>

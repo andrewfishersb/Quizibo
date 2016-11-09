@@ -1,3 +1,7 @@
+.quizImage {
+  max-height: 400px;
+}
+
 .noBullet {
   list-style-type: none;
   margin-right: 35px;
