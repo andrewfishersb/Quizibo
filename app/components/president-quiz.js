@@ -15,7 +15,7 @@ export default Ember.Component.extend({
         obj['terms'].push({"term":curPresidentTerm,"name":curPresidentName});
       }
       termArray=obj['terms'];
-console.log(termArray);
+      console.log(termArray);
       var curGuess = this.get('guess').toLowerCase();
       this.set('guess','');
       if(!this.guessedArray.includes(curGuess)){
