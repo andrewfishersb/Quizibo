@@ -102,7 +102,7 @@
     "name": "James Polk",
     "term": "1845-1849"
   }, {
-    "name": "Zachary Tayler",
+    "name": "Zachary Taylor",
     "term": "1849-1850"
   }, {
     "name": "Millard Fillmore",
@@ -120,10 +120,10 @@
     "name": "Andrew Johnson",
     "term": "1865-1869"
   },{
-    "name": "Ulysses S Grant",
+    "name": "Ulysses S. Grant",
     "term": "1869-1877"
   },{
-    "name": "Rutherford B Hayes",
+    "name": "Rutherford B. Hayes",
     "term": "1877-1881"
   },{
     "name": "James A. Garfield",
@@ -200,5 +200,8 @@
   },{
     "name": "Barack Obama",
     "term": "2009-2017"
-  }]
+  },{
+    "name": "Donald Trump",
+    "term" : "2017-?"
+    }]
 }
