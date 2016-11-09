@@ -5,16 +5,20 @@ export default Ember.Component.extend({
   presidentArray:[],
   guessedArray: [],
   actions:{
-    var termArray;
     checkAnswer(results){
+      var termArray='{"terms":[]}';
+      var obj = JSON.parse(termArray);
+
+
+
       for (var i = 0; i < results.content.length; i++) {
         this.presidentArray.push(results.content[i]._data.name.toLowerCase());
-        termArray ={
-          // results.content[i]._data.: value
-        }
-
+        var curPresidentName = results.content[i]._data.name;
+        var curPresidentTerm = results.content[i]._data.term;
+        obj['terms'].push({"term":curPresidentTerm,"name":curPresidentName});
       }
-
+      termArray=obj['terms'];
+      console.log(termArray);
       var curGuess = this.get('guess');
       if(!this.guessedArray.includes(curGuess)){
         console.log('got here');
