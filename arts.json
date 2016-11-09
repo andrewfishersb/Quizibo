@@ -1,6 +1,6 @@
 { "arts": [{
-    "artist": "Lichtenstein",
-    "image": "https://upload.wikimedia.org/wikipedia/en/d/df/Roy_Lichtenstein_Drowning_Girl.jpg"
+    "artist": "Munch",
+    "image": "http://i.dailymail.co.uk/i/pix/2012/05/03/article-2138678-12E016DA000005DC-756_634x845.jpg"
   }, {
     "artist": "Warhol",
     "image": "http://guyhepner.com/wp-content/uploads/2015/06/Classic-Marilyn-set--400x400.png"
@@ -26,8 +26,8 @@
     "artist": "Pollock",
     "image": "http://www.thedripartist.com/wp-content/uploads/2010/07/drip-painting-bigbang1.jpg"
   }, {
-    "artist": "Munch",
-    "image": "http://i.dailymail.co.uk/i/pix/2012/05/03/article-2138678-12E016DA000005DC-756_634x845.jpg"
+    "artist": "Lichtenstein",
+    "image": "https://upload.wikimedia.org/wikipedia/en/d/df/Roy_Lichtenstein_Drowning_Girl.jpg"
   }, {
     "artist": "Mondrian",
     "image": "http://assets1.bigthink.com/system/idea_thumbnails/45543/primary/Mondrian%20grid.jpg?1343912136"
