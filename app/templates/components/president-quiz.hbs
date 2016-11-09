@@ -1,1 +1,18 @@
-{{yield}}
+<div class="row">
+  {{#each results as |result|}}
+    <div class="col-xs-1">
+        <div class="not-shown"id="{{result.term}}1">
+          <img class="img-responsive" src="https://www.ekaspace.com/upload/img/profile/noimg.jpg" alt="" />
+          <p>President {{result.term}}</p>
+        </div>
+        <div class="shown" id="{{result.term}}2">
+          <img class="presiPhoto img-responsive" src="{{result.image}}" alt="" />
+          <p>{{result.name}} {{result.term}}</p>
+        </div>
+    </div>
+  {{/each}}
+</div>
+<label for="guess">Enter Presidents Full Name including middle initials or name </label>
+{{input class="form-control" value=guess name=guess id='guess'}}
+<button class="btn btn-primary" {{action 'checkAnswer' results}}>Submit</button>
+{{display-score score.totalScore}}
