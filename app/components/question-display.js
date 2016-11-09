@@ -58,9 +58,11 @@ export default Ember.Component.extend({
         } else {
           timer--;
           $("#timer").text(timer + " seconds");
+          $('.timerDisplay').show();
         }
       };
       var startTime = function(){
+
         timerHere = setInterval(stepTime, 1000);
       }
       startTime();
