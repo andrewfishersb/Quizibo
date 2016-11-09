@@ -16,3 +16,12 @@
 .score {
   text-align: right;
 }
+.shown{
+  display: none;
+  height: 150px;
+  width: 70px;
+
+}
+.presiPhoto{
+  width: 50px;
+}

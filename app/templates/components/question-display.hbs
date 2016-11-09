@@ -1,8 +1,9 @@
 {{#if startingQuiz}}
+
 <button class="btn btn-primary" {{action 'startQuiz' results}}>Start Quiz</button>
 {{/if}}
 {{#if quizzingNow}}
-
+  <div id="timer"></div>
   {{{currentQuestion}}}
   <ul>
     <li class="noBullet">{{radio-button value='0' checked=selectedAnswer}}{{{answerOne}}}</li>
@@ -16,9 +17,9 @@
 {{#if quizDone}}
 <h1>Answer Key</h1>
   {{#each results as |result|}}
-    <li>{{result.question}}</li>
+    <li>{{{result.question}}}</li>
     <ul>
-      <li>{{result.correct_answer}}</li>
+      <li>{{{result.correct_answer}}}</li>
     </ul>
   {{/each}}
   <button class="btn btn-primary" {{action 'transitionToNew'}}> New Route</button>

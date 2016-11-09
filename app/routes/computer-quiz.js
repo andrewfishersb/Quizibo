@@ -4,7 +4,7 @@ export default Ember.Route.extend({
   transition: Ember.inject.service(),
 
   model(){
-    var url = "https://www.opentdb.com/api.php?amount=10&category=18&difficulty=easy&type=multiple";
+    var url = "https://www.opentdb.com/api.php?amount=10&category=18&difficulty=medium&type=multiple";
     return Ember.$.getJSON(url).then(function(responseJSON){
       return responseJSON.results;
     });
