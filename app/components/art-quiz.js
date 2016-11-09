@@ -2,6 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   score: Ember.inject.service(),
+  transition: Ember.inject.service(),
   quizzingNow: false,
   areResultsShowing: false,
   startingQuiz: true,
@@ -33,8 +34,8 @@ export default Ember.Component.extend({
         this.set('quizzingNow', false);
       }
     },
-    transitionToNew(){
-      this.sendAction('transitionToNew');
+    transitionToNew(categories){
+      this.sendAction('transitionToNew',categories);
     }
   }
 });
