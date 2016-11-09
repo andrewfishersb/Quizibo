@@ -28,7 +28,7 @@ export default Ember.Component.extend({
         answerSpot = parseInt(this.selectedAnswer);
         if (this.allAnswers[answerSpot] === this.correctAnswer) {
           this.correctCounter++;
-          this.set('score.totalScore', this.correctCounter);
+          this.set('score.quizTotal', this.correctCounter);
         }
       }else{
         this.counter++;
@@ -36,7 +36,7 @@ export default Ember.Component.extend({
         answerSpot = parseInt(this.selectedAnswer);
         if (this.allAnswers[answerSpot] === this.correctAnswer) {
           this.correctCounter++;
-          this.set('score.totalScore', this.correctCounter);
+          this.set('score.quizTotal', this.correctCounter);
         }
         this.set('correctAnswer', results[this.counter].correct_answer);
         this.set('allAnswers', results[this.counter].incorrect_answers);
@@ -50,6 +50,7 @@ export default Ember.Component.extend({
       }
     },
     startQuiz(results){
+      //timer start
       var timer = 120;
       var timerHere;
       var stepTime = function(){
@@ -69,7 +70,6 @@ export default Ember.Component.extend({
       this.noTime = Ember.run.later(this, function() {
         this.set('quizDone', true);
         this.set('quizzingNow', false);
-        console.log("Later Ran")
       }, 120000);
       this.set('currentQuestion', results[this.counter].question);
       this.set('startingQuiz', false);
@@ -85,6 +85,7 @@ export default Ember.Component.extend({
       this.set('selectedAnswer', null);
     },
     transitionToNew(){
+      this.get('score').scoreCashout();
       this.sendAction('transitionToNew');
     }
   }

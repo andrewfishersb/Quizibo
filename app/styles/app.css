@@ -36,3 +36,10 @@
   margin-top: 20px;
   display: none;
 }
+.presiButton{
+  margin-left: 42%;
+  margin-top: 5px;
+}
+#guess{
+  text-align: center;
+}

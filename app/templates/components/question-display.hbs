@@ -20,13 +20,13 @@
         <li>{{{result.correct_answer}}}</li>
       </ul>
     {{/each}}
-    <button class="btn btn-primary" {{action 'transitionToNew'}}> New Route</button>
+    <button class="btn btn-primary" {{action 'transitionToNew'}}> Next Quiz</button>
   {{/if}}
 
 </div>
 <div class="row">
   <div class="timerDisplay" >
     <span id="timer"></span>
-    <p> Score: {{display-score score.totalScore}}</p>
+    <p> Score: {{display-score score.quizTotal}}</p>
   </div>
 </div>

@@ -13,6 +13,15 @@
   {{/each}}
 </div>
 <label for="guess">Enter Presidents Full Name including middle initials or name </label>
-{{input class="form-control" value=guess name=guess id='guess'}}
-<button class="btn btn-primary" {{action 'checkAnswer' results}}>Submit</button>
-{{display-score score.totalScore}}
+<div class="row">
+  <div class="col-xs-6 col-xs-offset-3">
+    {{input class="form-control" value=guess name=guess id='guess'}}
+    <button class="btn btn-primary presiButton" {{action 'checkAnswer' results}}>Submit</button>
+  </div>
+</div>
+<div class="row">
+  <div class="timerDisplay" >
+    <span id="timer"></span>
+    <p> Score: {{display-score score.quizTotal}}</p>
+  </div>
+</div>
