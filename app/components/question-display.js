@@ -19,10 +19,11 @@ export default Ember.Component.extend({
 
   actions:{
     nextQuestion(results){
+      var answerSpot;
       if(this.counter===9){
         this.set('quizzingNow', false);
         this.set('quizDone',true);
-        var answerSpot = parseInt(this.selectedAnswer);
+        answerSpot = parseInt(this.selectedAnswer);
         if (this.allAnswers[answerSpot] === this.correctAnswer) {
           this.correctCounter++;
           this.set('score.totalScore', this.correctCounter);
@@ -30,7 +31,7 @@ export default Ember.Component.extend({
       }else{
         this.counter++;
         this.set('currentQuestion', results[this.counter].question);
-        var answerSpot = parseInt(this.selectedAnswer);
+        answerSpot = parseInt(this.selectedAnswer);
         if (this.allAnswers[answerSpot] === this.correctAnswer) {
           this.correctCounter++;
           this.set('score.totalScore', this.correctCounter);

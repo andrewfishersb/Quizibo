@@ -6,6 +6,7 @@ export default Ember.Component.extend({
   currentQuestion: null,
   counter: 0,
   correctCounter: 0,
+  areResultsShowing: false,
   actions:{
     startQuiz(results){
       this.set('quizzingNow', true);
@@ -15,13 +16,18 @@ export default Ember.Component.extend({
       var answer = this.get('answer');
       this.set('answer', "");
       answer = answer.toLowerCase();
-      console.log(answer);
-      if (answer === results.content[this.counter]._data.artist) {
+      var answer2 = results.content[this.counter]._data.artist;
+      answer2 = answer2.toLowerCase();
+      if (answer === answer2) {
         this.correctCounter++;
         this.set('score.totalScore', this.correctCounter);
       }
+      if(this.counter<10) {
       this.counter++;
       this.set('currentQuestion', results.content[this.counter]._data.image);
+    } else {
+        this.set('areResultsShowing', true);
+      }
     }
   }
 });
