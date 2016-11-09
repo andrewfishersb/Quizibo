@@ -24,15 +24,17 @@ console.log(termArray);
           var index= this.presidentArray.indexOf(curGuess);
           if(curGuess==='grover cleveland'){
             $('#' + termArray[index].term + '1').toggle();
-            $('#' + termArray[index].term + '2').show();
             $('#' + termArray[index+2].term + '1').toggle();
+            $('#' + termArray[index].term + '2').show();
             $('#' + termArray[index+2].term + '2').show();
+            this.guessedArray.push(curGuess);
+          }else{
+            this.guessedArray.push(curGuess);
+            $('#' + termArray[index].term + '1').toggle();
+            $('#' + termArray[index].term + '2').show();
+            this.set('score.quizTotal', 1);
+            this.get('score').updateTotal();
           }
-          this.guessedArray.push(curGuess);
-          $('#' + termArray[index].term + '1').toggle();
-          $('#' + termArray[index].term + '2').show();
-          this.set('score.quizTotal', 1);
-          this.get('score').updateTotal();
         }
       }
 

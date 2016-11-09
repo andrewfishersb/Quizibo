@@ -22,8 +22,14 @@
   width: 70px;
 
 }
+.not-shown{
+  /*display: none;*/
+  height: 150px;
+  width: 70px;
+
+}
 .presiPhoto{
-  width: 50px;
+  width: 65px;
 }
 .timerDisplay{
   border: 5px solid black;
@@ -42,4 +48,12 @@
 }
 #guess{
   text-align: center;
+}
+
+#presiLoop{
+  height: 90vh;
+  overflow:scroll;
+}
+::-webkit-scrollbar {
+  display: none;
 }

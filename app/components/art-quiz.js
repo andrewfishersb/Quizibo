@@ -3,13 +3,16 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   score: Ember.inject.service(),
   quizzingNow: false,
+  areResultsShowing: false,
+  startingQuiz: true,
   currentQuestion: null,
   counter: 0,
   correctCounter: 0,
-  areResultsShowing: false,
+
   actions:{
     startQuiz(results){
       this.set('quizzingNow', true);
+      this.set('startingQuiz', false);
       this.set('currentQuestion', results.content[this.counter]._data.image);
     },
     nextQuestion(results){
@@ -27,7 +30,11 @@ export default Ember.Component.extend({
       this.set('currentQuestion', results.content[this.counter]._data.image);
     } else {
         this.set('areResultsShowing', true);
+        this.set('quizzingNow', false);
       }
+    },
+    transitionToNew(){
+      this.sendAction('transitionToNew');
     }
   }
 });
