@@ -1,27 +1,32 @@
-<div class="row">
-  {{#each results as |result|}}
-    <div class="col-xs-1">
-        <div class="not-shown"id="{{result.term}}1">
-          <img class="img-responsive" src="https://www.ekaspace.com/upload/img/profile/noimg.jpg" alt="" />
-          <p>President {{result.term}}</p>
-        </div>
-        <div class="shown" id="{{result.term}}2">
-          <img class="presiPhoto img-responsive" src="{{result.image}}" alt="" />
-          <p>{{result.name}} {{result.term}}</p>
-        </div>
+{{#if startingQuiz}}
+  <button class="btn btn-primary" {{action 'showQuiz'}}>Start Presidents Quiz</button>
+{{/if}}
+{{#if quizzingNow}}
+  <div class="row">
+    {{#each results as |result|}}
+      <div class="col-xs-1">
+          <div class="not-shown"id="{{result.term}}1">
+            <img class="img-responsive" src="https://www.ekaspace.com/upload/img/profile/noimg.jpg" alt="" />
+            <p>President {{result.term}}</p>
+          </div>
+          <div class="shown" id="{{result.term}}2">
+            <img class="presiPhoto img-responsive" src="{{result.image}}" alt="" />
+            <p>{{result.name}} {{result.term}}</p>
+          </div>
+      </div>
+    {{/each}}
+  </div>
+  <label for="guess">Enter President's Full Name including middle initials or name </label>
+  <div class="row">
+    <div class="col-xs-6 col-xs-offset-3">
+      {{input class="form-control" value=guess name=guess id='guess'}}
+      <button class="btn btn-primary presiButton" {{action 'checkAnswer' results}}>Submit</button>
     </div>
-  {{/each}}
-</div>
-<label for="guess">Enter Presidents Full Name including middle initials or name </label>
-<div class="row">
-  <div class="col-xs-6 col-xs-offset-3">
-    {{input class="form-control" value=guess name=guess id='guess'}}
-    <button class="btn btn-primary presiButton" {{action 'checkAnswer' results}}>Submit</button>
   </div>
-</div>
-<div class="row">
-  <div class="timerDisplay" >
-    <span id="timer"></span>
-    <p> Score: {{display-score score.quizTotal}}</p>
+  <div class="row">
+    <div class="timerDisplay" >
+      <span id="timer"></span>
+      <p> Score: {{display-score score.quizTotal}}</p>
+    </div>
   </div>
-</div>
+{{/if}}

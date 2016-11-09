@@ -71,6 +71,7 @@ export default Ember.Component.extend({
         this.set('quizDone', true);
         this.set('quizzingNow', false);
       }, 120000);
+      //timer end
       this.set('currentQuestion', results[this.counter].question);
       this.set('startingQuiz', false);
       this.set('quizzingNow', true);
