@@ -16,10 +16,12 @@ export default Ember.Component.extend({
   counter: 0,
   correctCounter: 0,
   currentTime: 120,
+  noTime:null,
 
   actions:{
     nextQuestion(results){
       if(this.counter===9){
+        Ember.run.cancel(this.noTime);
         this.set('quizzingNow', false);
         this.set('quizDone',true);
         var answerSpot = parseInt(this.selectedAnswer);
@@ -47,27 +49,25 @@ export default Ember.Component.extend({
       }
     },
     startQuiz(results){
-      var timer = 5;
+      var timer = 120;
       var timerHere;
-      console.log(timer);
       var stepTime = function(){
         if (timer === 0){
           clearInterval(timerHere);
-          alert('you lose');
         } else {
           timer--;
           $("#timer").text(timer + " seconds");
         }
       }
-      var startTime = function(timer){
+      var startTime = function(){
         timerHere = setInterval(stepTime, 1000);
       }
-
-
-
-
-
-      startTime(timer)
+      startTime();
+      this.noTime = Ember.run.later(this, function() {
+        this.set('quizDone', true);
+        this.set('quizzingNow', false);
+        console.log("Later Ran")
+      }, 10000);
       this.set('currentQuestion', results[this.counter].question);
       this.set('startingQuiz', false);
       this.set('quizzingNow', true);
