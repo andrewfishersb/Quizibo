@@ -2,9 +2,9 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-6">
-      <img class="img-responsive" src={{currentQuestion}}/>
+      <img class="quizImage" src={{currentQuestion}}/>
       <br>
-      <label for="answer">Name the movie:</label>
+      <label for="answer"><h3>Name the movie:</h3></label>
       {{input class="form-control" value=answer id="answer"}}
       <button class="btn btn-primary" {{action 'nextQuestion' results}}>Submit Answer</button>
     </div>
