@@ -6,6 +6,7 @@
 .thumbnail {
   max-height: 100px;
   max-width: auto;
+  border: red;
 }
 
 .score {
