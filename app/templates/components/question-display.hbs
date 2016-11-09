@@ -1,28 +1,32 @@
-{{#if startingQuiz}}
-
-<button class="btn btn-primary" {{action 'startQuiz' results}}>Start Quiz</button>
-{{/if}}
-{{#if quizzingNow}}
-  <div id="timer"></div>
-  {{{currentQuestion}}}
-  <ul>
-    <li class="noBullet">{{radio-button value='0' checked=selectedAnswer}}{{{answerOne}}}</li>
-    <li class="noBullet">{{radio-button value='1' checked=selectedAnswer}}{{{answerTwo}}}</li>
-    <li class="noBullet">{{radio-button value='2' checked=selectedAnswer}}{{{answerThree}}}</li>
-    <li class="noBullet">{{radio-button value='3' checked=selectedAnswer}}{{{answerFour}}}</li>
-  </ul>
-
-  <button class="btn btn-primary" {{action 'nextQuestion' results}}> Next Question</button>
-{{/if}}
-{{#if quizDone}}
-<h1>Answer Key</h1>
-  {{#each results as |result|}}
-    <li>{{{result.question}}}</li>
+<div class="row">
+  {{#if startingQuiz}}
+  <button class="btn btn-primary" {{action 'startQuiz' results}}>Start Quiz</button>
+  {{/if}}
+  {{#if quizzingNow}}
+    {{{currentQuestion}}}
     <ul>
-      <li>{{{result.correct_answer}}}</li>
+      <li class="noBullet">{{radio-button value='0' checked=selectedAnswer}}{{{answerOne}}}</li>
+      <li class="noBullet">{{radio-button value='1' checked=selectedAnswer}}{{{answerTwo}}}</li>
+      <li class="noBullet">{{radio-button value='2' checked=selectedAnswer}}{{{answerThree}}}</li>
+      <li class="noBullet">{{radio-button value='3' checked=selectedAnswer}}{{{answerFour}}}</li>
     </ul>
-  {{/each}}
-  <button class="btn btn-primary" {{action 'transitionToNew'}}> New Route</button>
-{{/if}}
+    <button class="btn btn-primary" {{action 'nextQuestion' results}}> Next Question</button>
+  {{/if}}
+  {{#if quizDone}}
+  <h1>Answer Key</h1>
+    {{#each results as |result|}}
+      <li>{{{result.question}}}</li>
+      <ul>
+        <li>{{{result.correct_answer}}}</li>
+      </ul>
+    {{/each}}
+    <button class="btn btn-primary" {{action 'transitionToNew'}}> New Route</button>
+  {{/if}}
 
-{{display-score score.totalScore}}
+</div>
+<div class="row">
+  <div class="timerDisplay" >
+    <span id="timer"></span>
+    <p> Score: {{display-score score.totalScore}}</p>
+  </div>
+</div>
