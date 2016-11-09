@@ -113,9 +113,11 @@
     "term": "1845-1849",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/JKP.tif/lossy-page1-330px-JKP.tif.jpg"
   }, {
-    "name": "Zachary Tayler",
+
+    "name": "Zachary Taylor",
     "term": "1849-1850",
     "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Zachary_Taylor_restored_and_cropped.png/330px-Zachary_Taylor_restored_and_cropped.png"
+
   }, {
     "name": "Millard Fillmore",
     "term": "1850-1853",
@@ -137,11 +139,11 @@
     "term": "1865-1869",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Andrew_Johnson_photo_portrait_head_and_shoulders%2C_c1870-1880-Edit1.jpg/330px-Andrew_Johnson_photo_portrait_head_and_shoulders%2C_c1870-1880-Edit1.jpg"
   },{
-    "name": "Ulysses S Grant",
+    "name": "Ulysses S. Grant",
     "term": "1869-1877",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Ulysses_S._Grant_1870-1880.jpg/330px-Ulysses_S._Grant_1870-1880.jpg"
   },{
-    "name": "Rutherford B Hayes",
+    "name": "Rutherford B. Hayes",
     "term": "1877-1881",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/President_Rutherford_Hayes_1870_-_1880_Restored.jpg/330px-President_Rutherford_Hayes_1870_-_1880_Restored.jpg"
   },{
