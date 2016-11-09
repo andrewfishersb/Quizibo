@@ -59,7 +59,7 @@ export default Ember.Component.extend({
           timer--;
           $("#timer").text(timer + " seconds");
         }
-      }
+      };
       var startTime = function(){
         timerHere = setInterval(stepTime, 1000);
       }
@@ -68,7 +68,7 @@ export default Ember.Component.extend({
         this.set('quizDone', true);
         this.set('quizzingNow', false);
         console.log("Later Ran")
-      }, 10000);
+      }, 120000);
       this.set('currentQuestion', results[this.counter].question);
       this.set('startingQuiz', false);
       this.set('quizzingNow', true);
