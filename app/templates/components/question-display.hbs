@@ -14,15 +14,14 @@
   {{/if}}
   {{#if quizDone}}
   <div class="well compAnswerKey">
-
-
-  <span class=compHeader><h1>Answer Key</h1></span>
-    {{#each results as |result|}}
-      <p><span class="qanda">Q:</span> {{{result.question}}}</p>
-      <p><span class="qanda">A:</span> {{{result.correct_answer}}}</p>
-      <br>
-    {{/each}}
-    <button class="btn btn-primary" {{action 'transitionToNew' transition.categories}}> Done</button>
+    <span class=compHeader><h1>Answer Key</h1></span>
+      {{#each results as |result|}}
+        <p><span class="qanda">Q:</span> {{{result.question}}}</p>
+        <p><span class="qanda">A:</span> {{{result.correct_answer}}}</p>
+        <br>
+      {{/each}}
+      <button class="btn btn-primary" {{action 'transitionToNew' transition.categories}}> Done</button>
+  </div>
   {{/if}}
 
 </div>
