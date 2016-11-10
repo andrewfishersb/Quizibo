@@ -9,8 +9,8 @@
 {{#if quizzingNow}}
 <div class="row visabilityBox">
   <div class="col-xs-3">
-    <div class=" inputDiv row">
-        <label for="guess">Enter Presidents Full Name including middle initials or name </label>
+    <div class="inputDiv row">
+        <label for="guess">Enter Presidents Full Name including middle initials or name i.e. Andrew S. Fisher </label>
         {{input class="form-control" value=guess name=guess id='guess'}}
         <button class="btn btn-primary presiButton" {{action 'checkAnswer' results}}>Submit</button>
     </div>

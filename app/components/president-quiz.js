@@ -14,7 +14,7 @@ export default Ember.Component.extend({
       this.set('quizzingNow', true);
       this.set('startQuiz', false);
       //timer start
-      var timer = 120;
+      var timer = 60;
       var timerHere;
       var stepTime = function(){
         if (timer === 0){
@@ -34,7 +34,7 @@ export default Ember.Component.extend({
         $('#presiDoneButton').show();
         $('.inputDiv').hide();
         $('.notShown').hide();
-      }, 120000);
+      }, 60000);
     },
     checkAnswer(results){
       var termArray='{"terms":[]}';
@@ -60,9 +60,9 @@ export default Ember.Component.extend({
             this.guessedArray.push(curGuess);
             $('#' + termArray[index].term + '1').toggle();
             $('#' + termArray[index].term + '2').show();
-            this.correctCounter++;
-            this.set('score.quizTotal', this.correctCounter);
           }
+          this.correctCounter++;
+          this.set('score.quizTotal', this.correctCounter);
         }
       },
     transitionToNew(categories){
