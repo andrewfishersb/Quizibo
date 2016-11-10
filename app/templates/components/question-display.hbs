@@ -1,6 +1,6 @@
 <div class="row">
   {{#if startingQuiz}}
-  <button class="btn btn-primary" {{action 'startQuiz' results}}>Start Quiz</button>
+  <button class="btn btn-primary compButton" {{action 'startQuiz' results}}>Start Quiz</button>
   {{/if}}
   {{#if quizzingNow}}
     {{{currentQuestion}}}
@@ -13,14 +13,17 @@
     <button class="btn btn-primary" {{action 'nextQuestion' results}}> Next Question</button>
   {{/if}}
   {{#if quizDone}}
-  <h1>Answer Key</h1>
+  <div class="well compAnswerKey">
+
+
+  <span class=compHeader><h1>Answer Key</h1></span>
     {{#each results as |result|}}
-      <li>{{{result.question}}}</li>
-      <ul>
-        <li>{{{result.correct_answer}}}</li>
-      </ul>
+      <p><span class="qanda">Q:</span> {{{result.question}}}</p>
+      <p><span class="qanda">A:</span> {{{result.correct_answer}}}</p>
+      <br>
     {{/each}}
-    <button class="btn btn-primary" {{action 'transitionToNew'}}> Next Quiz</button>
+    <button class="btn btn-primary" {{action 'transitionToNew'}}>Done</button>
+    </div>
   {{/if}}
 
 </div>
