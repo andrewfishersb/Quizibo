@@ -4,7 +4,7 @@
 {{#if quizzingNow}}
 <div class="container">
   <div class="row">
-    <div class="col-xs-6">
+    <div class="col-xs-6 visabilityBox">
       <img class="quizImage" src={{currentQuestion}}/>
       <br>
       <label for="answer"><h3>Name the painter by last name:</h3></label>
@@ -23,8 +23,8 @@
 </div>
 {{/if}}
 {{#if areResultsShowing}}
-<h1>Answer Key</h1>
-  <div class="container">
+  <div class="container well compAnswerKey">
+    <h1>Answer Key</h1>
       <div class="row">
           {{#each results as |arts|}}
             <div class="col-xs-3">

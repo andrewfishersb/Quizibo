@@ -16,7 +16,7 @@ export default Ember.Component.extend({
       this.set('startQuiz', false);
       this.set('currentQuestion', results.content[this.counter]._data.image);
       //timer start
-      var timer = 10;
+      var timer = 60;
       var timerHere;
       var stepTime = function(){
         if (timer === 0){
@@ -35,7 +35,7 @@ export default Ember.Component.extend({
       this.noTime = Ember.run.later(this, function() {
         this.set('areResultsShowing', true);
         this.set('quizzingNow', false);
-      }, 10000);
+      }, 60000);
     },
     nextQuestion(results){
       var answer = this.get('answer');

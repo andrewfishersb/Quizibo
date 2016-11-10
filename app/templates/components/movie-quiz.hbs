@@ -2,7 +2,7 @@
   <button class="btn btn-primary" {{action 'startQuiz' results}}>Start Movie Quiz</button>
 {{/if}}
 {{#if quizzingNow}}
-<div class="container">
+<div class="container visabilityBox">
   <div class="row">
     <div class="col-xs-6">
       <img class="quizImage" src={{currentQuestion}}/>
@@ -24,16 +24,17 @@
 {{/if}}
 
 {{#if areResultsShowing}}
-  <h1>Answer Key</h1>
-    <div class="container">
-      <div class="row">
-        {{#each results as |movies|}}
-          <div class="col-xs-3">
-            {{movies.title}}<img class="thumbnail" src={{movies.image}}/>
-          </div>
-        {{/each}}
-      </div>
-      <button class="btn btn-primary" {{action 'transitionToNew' transition.categories}}>Done</button>
-
+  <div class="well compAnswerKey">
+    <h1>Answer Key</h1>
+      <div class="container">
+        <div class="row">
+          {{#each results as |movies|}}
+            <div class="col-xs-3">
+              {{movies.title}}<img class="thumbnail" src={{movies.image}}/>
+            </div>
+          {{/each}}
+        </div>
+        <button class="btn btn-primary" {{action 'transitionToNew' transition.categories}}>Done</button>
+  </div>
   </div>
 {{/if}}

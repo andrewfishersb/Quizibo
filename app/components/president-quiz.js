@@ -14,7 +14,7 @@ export default Ember.Component.extend({
       this.set('quizzingNow', true);
       this.set('startQuiz', false);
       //timer start
-      var timer = 10;
+      var timer = 120;
       var timerHere;
       var stepTime = function(){
         if (timer === 0){
@@ -34,7 +34,7 @@ export default Ember.Component.extend({
         $('#presiDoneButton').show();
         $('.inputDiv').hide();
         $('.notShown').hide();
-      }, 10000);
+      }, 120000);
     },
     checkAnswer(results){
       var termArray='{"terms":[]}';

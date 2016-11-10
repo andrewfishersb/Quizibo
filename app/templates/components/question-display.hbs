@@ -2,32 +2,35 @@
   {{#if startingQuiz}}
   <button class="btn btn-primary compButton" {{action 'startQuiz' results}}>Start Quiz</button>
   {{/if}}
-  {{#if quizzingNow}}
-    {{{currentQuestion}}}
-    <ul>
-      <li class="noBullet">{{radio-button value='0' checked=selectedAnswer}}{{{answerOne}}}</li>
-      <li class="noBullet">{{radio-button value='1' checked=selectedAnswer}}{{{answerTwo}}}</li>
-      <li class="noBullet">{{radio-button value='2' checked=selectedAnswer}}{{{answerThree}}}</li>
-      <li class="noBullet">{{radio-button value='3' checked=selectedAnswer}}{{{answerFour}}}</li>
-    </ul>
-    <button class="btn btn-primary" {{action 'nextQuestion' results}}> Next Question</button>
-  {{/if}}
-  {{#if quizDone}}
-  <div class="well compAnswerKey">
-    <span class=compHeader><h1>Answer Key</h1></span>
-      {{#each results as |result|}}
-        <p><span class="qanda">Q:</span> {{{result.question}}}</p>
-        <p><span class="qanda">A:</span> {{{result.correct_answer}}}</p>
-        <br>
-      {{/each}}
-      <button class="btn btn-primary" {{action 'transitionToNew' transition.categories}}> Done</button>
-  </div>
-  {{/if}}
 
-</div>
-<div class="row">
-  <div class="timerDisplay" >
-    <span id="timer"></span>
-    <p> Score: {{display-score score.quizTotal}}</p>
+  {{#if quizzingNow}}
+    <div class="visabilityBox">
+      {{{currentQuestion}}}
+      <ul>
+        <li class="noBullet">{{radio-button value='0' checked=selectedAnswer}}{{{answerOne}}}</li>
+        <li class="noBullet">{{radio-button value='1' checked=selectedAnswer}}{{{answerTwo}}}</li>
+        <li class="noBullet">{{radio-button value='2' checked=selectedAnswer}}{{{answerThree}}}</li>
+        <li class="noBullet">{{radio-button value='3' checked=selectedAnswer}}{{{answerFour}}}</li>
+      </ul>
+      <button class="btn btn-primary" {{action 'nextQuestion' results}}> Next Question</button>
+    </div>
+    {{/if}}
+    {{#if quizDone}}
+    <div class="well compAnswerKey">
+      <span class=compHeader><h1>Answer Key</h1></span>
+        {{#each results as |result|}}
+          <p><span class="qanda">Q:</span> {{{result.question}}}</p>
+          <p><span class="qanda">A:</span> {{{result.correct_answer}}}</p>
+          <br>
+        {{/each}}
+        <button class="btn btn-primary" {{action 'transitionToNew' transition.categories}}> Done</button>
+    </div>
+    {{/if}}
+  <div class="row">
+    <div class="timerDisplay" >
+      <span id="timer"></span>
+      <p> Score: {{display-score score.quizTotal}}</p>
+    </div>
   </div>
+
 </div>
