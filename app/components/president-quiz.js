@@ -46,8 +46,6 @@ export default Ember.Component.extend({
       termArray=obj['terms'];
       var curGuess = this.get('guess').toLowerCase();
       this.set('guess','');
-      if(!this.guessedArray.includes(curGuess)){
-        console.log('got here');
         if (this.presidentArray.includes(curGuess)) {
           var index= this.presidentArray.indexOf(curGuess);
           if(curGuess==='grover cleveland'){
@@ -62,13 +60,11 @@ export default Ember.Component.extend({
             $('#' + termArray[index].term + '2').show();
             this.correctCounter++;
             this.set('score.quizTotal', this.correctCounter);
-            console.log(this.get('score').quizTotal);
           }
         }
       }
     },
     transitionToNew(){
-      console.log("done works")
       this.get('score').scoreCashout();
       this.sendAction('transitionToNew');
     }

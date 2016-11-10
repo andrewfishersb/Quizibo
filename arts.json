@@ -250,5 +250,18 @@
     "name": "Donald Trump",
     "term": "2017",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/President_Trump_2.jpg/330px-President_Trump_2.jpg"
-  }]
+  }],
+  "players": [{
+      "name": "Millard Fillmore",
+      "score":2
+    }, {
+      "name": "Steve Jobs",
+      "score":10
+    },{
+      "name": "Vincent Van Gogh",
+      "score":10
+    }, {
+      "name": "Robert de Niro",
+      "score":15
+    }]
 }

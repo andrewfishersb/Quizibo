@@ -10,9 +10,15 @@ export default Ember.Route.extend({
     });
   },
   actions: {
-    transitionToNew(){
-      var newRoute = this.get('transition').remove();
-      this.transitionTo(newRoute);
+    transitionToNew(categories){
+      if(categories.length===0){
+        this.transitionTo('index');
+      }else{
+        var newRoute = this.get('transition').remove();
+        console.log(categories);
+        this.transitionTo(newRoute);
+      }
+
     }
   }
 });
