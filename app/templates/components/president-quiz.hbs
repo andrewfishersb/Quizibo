@@ -15,7 +15,7 @@
         <p> Score: {{display-score score.quizTotal}}</p>
       </div>
     </div>
-    <button id="presiDoneButton" class=" btn btn-primary" {{action 'transitionToNew'}}>Done</button>
+    <button id="presiDoneButton" class=" btn btn-primary" {{action 'transitionToNew' transition.categories}}>Done</button>
   </div>
   <div class="col-xs-9">
     <div class="row" id="presiLoop">

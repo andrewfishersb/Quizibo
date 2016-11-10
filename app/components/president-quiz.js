@@ -2,6 +2,8 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   score: Ember.inject.service(),
+  transition: Ember.inject.service(),
+
   presidentArray:[],
   guessedArray: [],
   startQuiz: true,
@@ -62,11 +64,10 @@ export default Ember.Component.extend({
             this.set('score.quizTotal', this.correctCounter);
           }
         }
-      }
-    },
-    transitionToNew(){
+      },
+    transitionToNew(categories){
       this.get('score').scoreCashout();
-      this.sendAction('transitionToNew');
+      this.sendAction('transitionToNew',categories);
     }
   }
 });
