@@ -1,2 +1,24 @@
-{{input class="form-control" name=name value=name id="name"}}
-<button class='btn btn-success' {{action 'initialTransition'}}>Start Game</button>
+<h1 class='page-header'>Amazing Quiz</h1>
+
+<div class="row">
+  <div class="col-xs-6">
+    <h3>Directions</h3>
+    <li>Enter your name below</li>
+    <li>You will be directed to one of four random quizes</li>
+    <li>Make your way through all four to win</li>
+    {{#unless gameOver}}
+      <button class='btn btn-success' {{action 'initialTransition'}}>Start Game</button>
+    {{/unless}}
+  </div>
+  <div class="col-xs-6">
+    <h2>Leader Board</h2>
+    {{#each model as |result|}}
+      <li>{{result.name}}: {{result.score}}</li>
+    {{/each}}
+  </div>
+</div>
+
+{{#if gameOver}}
+  {{input class="form-control" name=player-name value=player-name id="player-name"}}
+  <button class='btn btn-success' {{action 'inputScore'}}>Enter your name</button>
+{{/if}}

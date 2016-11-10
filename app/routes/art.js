@@ -6,9 +6,15 @@ export default Ember.Route.extend({
     return this.store.findAll('art');
   },
   actions: {
-    transitionToNew(){
-      var newRoute = this.get('transition').remove();
-      this.transitionTo(newRoute);
+    transitionToNew(categories){
+      if(categories.length===0){
+        this.transitionTo('index');
+      }else{
+        var newRoute = this.get('transition').remove();
+        console.log(categories);
+        this.transitionTo(newRoute);
+      }
+
     }
   }
 });

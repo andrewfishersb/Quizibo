@@ -29,6 +29,7 @@
           </div>
         {{/each}}
       </div>
-      <button class="btn btn-primary" {{action 'transitionToNew'}}>Next Quiz</button>
+      
+      <button class="btn btn-primary" {{action 'transitionToNew' transition.categories}}>Next Quiz</button>
   </div>
 {{/if}}
