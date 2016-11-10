@@ -5,13 +5,16 @@ export default Ember.Route.extend({
   model(){
       return this.store.findAll('president');
   },
-  transitionToNew(categories){
-    if(categories.length===0){
-      this.transitionTo('index');
-    }else{
-      var newRoute = this.get('transition').remove();
-      this.transitionTo(newRoute);
-    }
 
+  actions:{
+    transitionToNew(categories){
+      if(categories.length===0){
+        this.transitionTo('index');
+      }else{
+        var newRoute = this.get('transition').remove();
+        this.transitionTo(newRoute);
+      }
+    }
   }
+
 });

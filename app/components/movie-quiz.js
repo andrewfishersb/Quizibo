@@ -15,6 +15,27 @@ export default Ember.Component.extend({
       this.set('quizzingNow', true);
       this.set('startQuiz', false);
       this.set('currentQuestion', results.content[this.counter]._data.image);
+      //timer start
+      var timer = 10;
+      var timerHere;
+      var stepTime = function(){
+        if (timer === 0){
+          clearInterval(timerHere);
+        } else {
+          timer--;
+          $("#movieTimer").text(timer + " seconds");
+          $('.movieTimerDisplay').show();
+        }
+      };
+      var startTime = function(){
+
+        timerHere = setInterval(stepTime, 1000);
+      }
+      startTime();
+      this.noTime = Ember.run.later(this, function() {
+        this.set('areResultsShowing', true);
+        this.set('quizzingNow', false);
+      }, 10000);
     },
     nextQuestion(results){
       var answer = this.get('answer');
@@ -27,6 +48,7 @@ export default Ember.Component.extend({
         this.set('score.totalScore', this.correctCounter);
       }
       if(this.counter<10) {
+      Ember.run.cancel(this.noTime);
       this.counter++;
       this.set('currentQuestion', results.content[this.counter]._data.image);
     } else {
@@ -34,7 +56,9 @@ export default Ember.Component.extend({
         this.set('quizzingNow', false);
       }
     },
+
     transitionToNew(categories){
+      this.get('score').scoreCashout();
       this.sendAction('transitionToNew',categories);
     }
   }

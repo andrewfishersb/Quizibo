@@ -12,8 +12,12 @@
       <button class="btn btn-primary" {{action 'nextQuestion' results}}>Submit Answer</button>
     </div>
     <div class="col-xs-5 score">
-      <h2>Score</h2>
-      <h2>{{score.totalScore}}</h2>
+      <div class="row">
+        <div class="artTimerDisplay" >
+          <span id="artTimer"></span>
+          <p> Score: {{display-score score.quizTotal}}</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>

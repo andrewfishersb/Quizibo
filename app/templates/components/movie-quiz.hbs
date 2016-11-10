@@ -11,9 +11,13 @@
       {{input class="form-control" value=answer id="answer"}}
       <button class="btn btn-primary" {{action 'nextQuestion' results}}>Submit Answer</button>
     </div>
-    <div class="col-xs-5 score">
-      <h2>Score</h2>
-      <h2>{{score.totalScore}}</h2>
+    <div class="col-xs-3 col-xs-offset-2 score">
+      <div class="row">
+        <div class="movieTimerDisplay" >
+          <span id="movieTimer"></span>
+          <p> Score: {{display-score score.quizTotal}}</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -29,7 +33,7 @@
           </div>
         {{/each}}
       </div>
-      
-      <button class="btn btn-primary" {{action 'transitionToNew' transition.categories}}>Next Quiz</button>
+      <button class="btn btn-primary" {{action 'transitionToNew' transition.categories}}>Done</button>
+
   </div>
 {{/if}}
