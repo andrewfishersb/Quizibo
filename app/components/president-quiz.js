@@ -27,7 +27,7 @@ export default Ember.Component.extend({
       };
       var startTime = function(){
         timerHere = setInterval(stepTime, 1000);
-      }
+      };
       startTime();
       this.noTime = Ember.run.later(this, function() {
         $('.shown').show();

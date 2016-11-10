@@ -45,7 +45,7 @@ export default Ember.Component.extend({
       answer2 = answer2.toLowerCase();
       if (answer === answer2) {
         this.correctCounter++;
-        this.set('score.totalScore', this.correctCounter);
+        this.set('score.quizTotal', this.correctCounter);
       }
       if(this.counter<10) {
       Ember.run.cancel(this.noTime);

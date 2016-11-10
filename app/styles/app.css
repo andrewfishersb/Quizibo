@@ -39,6 +39,10 @@ body{
   max-height: 400px;
 }
 
+.directions {
+  text-align: center;
+}
+
 .noBullet {
   list-style-type: none;
   margin-right: 35px;
@@ -106,6 +110,16 @@ body{
   display: none;
 }
 
+.mainBullet{
+  list-style-type: none;
+  margin-right: 35px;
+}
+.quizHeader{
+  text-align: center;
+  font-family: 'Fredericka the Great', cursive;
+  text-shadow: 2px 2px 2px black;
+  font-size: 55px;
+}
 .presidentTimerDisplay{
   background-color: rgba(105, 105, 105, .7);
   float: right;
@@ -126,6 +140,13 @@ body{
 
 .presiTimerBox{
   text-align: center;
+}
+
+.page-header {
+  font-size: 70px;
+  text-align: center;
+  font-family: 'Fredericka the Great', cursive;
+  text-shadow: 2px 2px 2px black;
 }
 
 #guess{

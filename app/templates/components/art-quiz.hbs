@@ -1,5 +1,10 @@
 {{#if startingQuiz}}
-  <button class="btn btn-primary" {{action 'startQuiz' results}}>Start Art Quiz</button>
+<div class="row visabilityBox">
+  <div class="col-xs-6 col-xs-offset-3 ">
+    <h1 class="quizHeader">Art Quiz</h1>
+    <button class="compButton btn btn-primary" {{action 'startQuiz' results}}>Start Art Quiz</button>
+  </div>
+</div>
 {{/if}}
 {{#if quizzingNow}}
 <div class="container">
@@ -32,6 +37,6 @@
             </div>
           {{/each}}
       </div>
-      <button class="btn btn-primary" {{action 'transitionToNew' transition.categories}}>Next Quiz</button>
+      <button class="btn btn-primary" {{action 'transitionToNew' transition.categories}}>Done</button>
   </div>
 {{/if}}

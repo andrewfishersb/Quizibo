@@ -1,5 +1,11 @@
 {{#if startQuiz}}
-  <button class="btn btn-primary" {{action 'startQuiz' results}}>Start Movie Quiz</button>
+  <div class="row visabilityBox">
+    <div class="col-xs-6 col-xs-offset-3 ">
+      <h1 class="quizHeader">Movie Quiz</h1>
+      <button class="compButton btn btn-primary" {{action 'startQuiz' results}}>Start Movie Quiz</button>
+    </div>
+  </div>
+
 {{/if}}
 {{#if quizzingNow}}
 <div class="container visabilityBox">
