@@ -1,8 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Service.extend({
-  // categories: ['art','computer-quiz','movie','president'],
-  categories: ['art','computer-quiz','movie'],
+  categories: ['art','computer-quiz','movie','president'],
 
 
   remove(){
