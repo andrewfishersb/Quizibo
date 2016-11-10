@@ -22,6 +22,7 @@
   width: 70px;
 
 }
+
 .not-shown{
   /*display: none;*/
   height: 150px;
@@ -42,10 +43,53 @@
   margin-top: 20px;
   display: none;
 }
+.artTimerDisplay{
+  border: 5px solid black;
+  float: right;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 6px;
+  padding: 5px;
+  width: 100%;
+  margin-top: 20px;
+  display: none;
+}
+
+.movieTimerDisplay{
+  border: 5px solid black;
+  float: right;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 6px;
+  padding: 5px;
+  width: 100%;
+  margin-top: 20px;
+  margin-left: 50px;
+  display: none;
+}
+
+.presidentTimerDisplay{
+  border: 5px solid black;
+  float: right;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 6px;
+  padding: 5px;
+  width: 100%;
+  margin-top: 20px;
+  margin-left: 50px;
+  display: none;
+}
+
 .presiButton{
   margin-left: 42%;
   margin-top: 5px;
 }
+
+.presiTimerBox{
+  text-align: center;
+}
+
 #guess{
   text-align: center;
 }
@@ -54,6 +98,13 @@
   height: 90vh;
   overflow:scroll;
 }
+
+#presiDoneButton{
+  display: none;
+  margin-top: 5px;
+  text-align:
+}
+
 ::-webkit-scrollbar {
   display: none;
 }

@@ -4,7 +4,36 @@ export default Ember.Component.extend({
   score: Ember.inject.service(),
   presidentArray:[],
   guessedArray: [],
+  startQuiz: true,
+  quizzingNow: false,
+  correctCounter: 0,
   actions:{
+    startQuiz(results){
+      this.set('quizzingNow', true);
+      this.set('startQuiz', false);
+      //timer start
+      var timer = 10;
+      var timerHere;
+      var stepTime = function(){
+        if (timer === 0){
+          clearInterval(timerHere);
+        } else {
+          timer--;
+          $("#presidentTimer").text(timer + " seconds");
+          $('.presidentTimerDisplay').show();
+        }
+      };
+      var startTime = function(){
+        timerHere = setInterval(stepTime, 1000);
+      }
+      startTime();
+      this.noTime = Ember.run.later(this, function() {
+        $('.shown').show();
+        $('#presiDoneButton').show();
+        $('.inputDiv').hide();
+        $('.notShown').hide();
+      }, 10000);
+    },
     checkAnswer(results){
       var termArray='{"terms":[]}';
       var obj = JSON.parse(termArray);
@@ -15,7 +44,6 @@ export default Ember.Component.extend({
         obj['terms'].push({"term":curPresidentTerm,"name":curPresidentName});
       }
       termArray=obj['terms'];
-console.log(termArray);
       var curGuess = this.get('guess').toLowerCase();
       this.set('guess','');
       if(!this.guessedArray.includes(curGuess)){
@@ -32,12 +60,17 @@ console.log(termArray);
             this.guessedArray.push(curGuess);
             $('#' + termArray[index].term + '1').toggle();
             $('#' + termArray[index].term + '2').show();
-            this.set('score.quizTotal', 1);
-            this.get('score').updateTotal();
+            this.correctCounter++;
+            this.set('score.quizTotal', this.correctCounter);
+            console.log(this.get('score').quizTotal);
           }
         }
       }
-
     },
+    transitionToNew(){
+      console.log("done works")
+      this.get('score').scoreCashout();
+      this.sendAction('transitionToNew');
+    }
   }
 });
